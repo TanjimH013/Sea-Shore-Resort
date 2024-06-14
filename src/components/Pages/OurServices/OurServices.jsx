@@ -32,17 +32,14 @@ const OurServices = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="booking-now">
-                <Link to="/booking-now">Booking Now</Link>
+              <NavLink to="book-now">
+                <Link to="/book-now">Book Now</Link>
               </NavLink>
             </li>
           </ul>
         </div>
       </div>
-      <h1 className="our-services text-3xl">I'm Our Services page</h1>
-      <button>
-        <Link to="/">⬅ Go Home</Link>
-      </button>
+      <h1 className="our-services text-3xl">Our Services page</h1>
     </div>
   );
 };

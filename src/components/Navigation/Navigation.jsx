@@ -26,7 +26,7 @@ const Navbar = () => {
               <NavLink to="our-services">Our Services</NavLink>
             </li>
             <li>
-              <NavLink to="booking-now">Booking Now</NavLink>
+              <NavLink to="book-now">Book Now</NavLink>
             </li>
           </ul>
         </div>

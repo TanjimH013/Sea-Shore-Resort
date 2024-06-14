@@ -32,8 +32,8 @@ const Home = () => {
               </NavLink>
             </li>
             <li>
-              <NavLink to="booking-now">
-                <Link to="/booking-now">Booking Now</Link>
+              <NavLink to="book-now">
+                <Link to="/book-now">Book Now</Link>
               </NavLink>
             </li>
           </ul>

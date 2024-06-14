@@ -32,12 +32,12 @@ const Blog = () => {
             </li>
             <li>
               <NavLink to="our-services">
-                <Link to="/our-services">Our Service</Link>
+                <Link to="/our-services">Our Services</Link>
               </NavLink>
             </li>
             <li>
-              <NavLink to="booking-now">
-                <Link to="/booking-now">Booking Now</Link>
+              <NavLink to="book-now">
+                <Link to="/book-now">Book Now</Link>
               </NavLink>
             </li>
           </ul>

@@ -1,8 +1,8 @@
 import { NavLink, Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
-import "./bookingNow.css";
+import "./bookNow.css";
 
-const BookingNow = () => {
+const BookNow = () => {
   return (
     <div>
       <div className="container flex justify-between">
@@ -31,6 +31,11 @@ const BookingNow = () => {
                 <Link to="/our-services">Our Services</Link>
               </NavLink>
             </li>
+            <li>
+              <NavLink to="book-now">
+                <Link to="/book-now">Book Now</Link>
+              </NavLink>
+            </li>
           </ul>
         </div>
       </div>
@@ -38,4 +43,4 @@ const BookingNow = () => {
   );
 };
 
-export default BookingNow;
+export default BookNow;
