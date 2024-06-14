@@ -22,25 +22,17 @@ const BookNow = () => {
   };
   const [formData, setFormData] = useState(initialValues);
 
-  const [isSubmit, setIsSubmit] = useState(false);
-
-  const notify = () => {
-    isSubmit ? toast("Successfully submitted") : "Enter all information again";
-  };
-
-  console.log(isSubmit);
-
   const handleChange = (e) => {
-    const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+    setFormData(() => ({ ...formData, [e.target.name]: e.target.value }));
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-
-    setIsSubmit(true);
+    console.log(formData);
   };
-
+  const notify = () => {
+    toast(formData ? "Submitted successfully" : "enter your info");
+  };
   return (
     <Fragment>
       <div className="container w-[100%] h-40 pt-14 flex justify-between">
@@ -116,10 +108,10 @@ const BookNow = () => {
                 value={formData.adult}
               >
                 <option>select</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4+</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4+">4+</option>
               </select>
             </div>
 
@@ -135,11 +127,11 @@ const BookNow = () => {
                 value={formData.children}
               >
                 <option>select</option>
-                <option>0</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4+</option>
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4+">4+</option>
               </select>
             </div>
 
@@ -155,10 +147,10 @@ const BookNow = () => {
                 value={formData.room}
               >
                 <option>select</option>
-                <option>1</option>
-                <option>2</option>
-                <option>3</option>
-                <option>4+</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4+">4+</option>
               </select>
             </div>
           </div>
