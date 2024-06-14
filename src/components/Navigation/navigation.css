@@ -1,0 +1,23 @@
+.container {
+  font-family: "Poetsen One";
+}
+
+.container li {
+  color: rgb(48, 57, 73);
+  font-weight: 600;
+  font-size: 20px;
+}
+
+mainImg {
+  position: relative;
+}
+
+/* .Img-card {
+  position: absolute;
+  top: 75%;
+  left: 2%;
+} */
+
+.mainImg-container {
+  font-family: "Gruppo";
+}

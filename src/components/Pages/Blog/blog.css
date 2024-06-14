@@ -1,0 +1,15 @@
+.container {
+  margin-bottom: 100px;
+}
+
+.blog-card h1 {
+  font-family: "Poppins";
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 35px;
+  margin-bottom: 15px;
+}
+
+.blog-card p {
+  margin-bottom: 35px;
+}
