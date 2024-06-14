@@ -85,7 +85,7 @@ const BookNow = () => {
 
           <div className="date-card flex gap-8">
             <div className="flex flex-col">
-              <label>Arrival Date *</label>
+              <label className=" mb-1">Arrival Date *</label>
               <input
                 type="date"
                 name="dateArrival"
@@ -95,7 +95,7 @@ const BookNow = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label>Departure Date *</label>
+              <label className=" mb-1">Departure Date *</label>
               <input
                 type="date"
                 name="dateDeparture"
@@ -108,7 +108,7 @@ const BookNow = () => {
 
           <div className="flex gap-8">
             <div className="flex flex-col">
-              <label>Number of Adults</label>
+              <label className=" mb-1">Number of Adults</label>
               <select
                 name="adult"
                 className="border px-4 w-[357px] h-11 outline-none"
@@ -147,7 +147,7 @@ const BookNow = () => {
               className="flex
             flex-col"
             >
-              <label>Number of Room</label>
+              <label className=" mb-1">Number of Room</label>
               <select
                 name="room"
                 className="border px-4 w-[357px] h-11 outline-none"
@@ -165,7 +165,7 @@ const BookNow = () => {
 
           <div className="flex gap-8">
             <div className="flex flex-col">
-              <label>FirstName *</label>
+              <label className=" mb-1">FirstName *</label>
               <input
                 type="text"
                 name="firstName"
@@ -176,7 +176,7 @@ const BookNow = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label>LastName *</label>
+              <label className=" mb-1">LastName *</label>
               <input
                 type="text"
                 name="lastName"
@@ -190,7 +190,7 @@ const BookNow = () => {
 
           <div className="flex gap-8">
             <div className="flex flex-col">
-              <label>Email *</label>
+              <label className=" mb-1">Email *</label>
               <input
                 type="email"
                 name="email"
@@ -201,7 +201,7 @@ const BookNow = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label>Phone No. *</label>
+              <label className=" mb-1">Phone No. *</label>
               <input
                 type="text"
                 name="phoneNum"
@@ -214,7 +214,7 @@ const BookNow = () => {
           </div>
 
           <div className="flex flex-col">
-            <label>Address *</label>
+            <label className=" mb-1">Address *</label>
             <textarea
               rows="5"
               name="address"
@@ -227,7 +227,7 @@ const BookNow = () => {
 
           <div className="flex gap-8">
             <div className="flex flex-col">
-              <label>City *</label>
+              <label className=" mb-1">City *</label>
               <input
                 type="text"
                 name="city"
@@ -238,7 +238,7 @@ const BookNow = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label>State</label>
+              <label className=" mb-1">State</label>
               <input
                 type="text"
                 name="state"
@@ -249,7 +249,7 @@ const BookNow = () => {
               />
             </div>
             <div className="flex flex-col">
-              <label>Country *</label>
+              <label className=" mb-1">Country *</label>
               <input
                 type="text"
                 name="country"
