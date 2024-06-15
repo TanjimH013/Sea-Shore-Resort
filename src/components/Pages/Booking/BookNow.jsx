@@ -24,15 +24,62 @@ const BookNow = () => {
 
   const handleChange = (e) => {
     setFormData(() => ({ ...formData, [e.target.name]: e.target.value }));
-  };
-
-  const handleSubmit = (e) => {
-    e.preventDefault();
     console.log(formData);
   };
-  const notify = () => {
-    toast(formData ? "Submitted successfully" : "enter your info");
+
+  const handleSubmit = async (e) => {
+    const {
+      dateArrival,
+      dateDeparture,
+      adult,
+      children,
+      room,
+      firstName,
+      lastName,
+      email,
+      phoneNum,
+      address,
+      city,
+      state,
+      country,
+    } = formData;
+    e.preventDefault();
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify({
+        dateArrival,
+        dateDeparture,
+        adult,
+        children,
+        room,
+        firstName,
+        lastName,
+        email,
+        phoneNum,
+        address,
+        city,
+        state,
+        country,
+      }),
+    };
+    const res = await fetch(
+      "https://sea-shore-resort-website-default-rtdb.asia-southeast1.firebasedatabase.app/UserData.json",
+      options
+    );
+    console.log(res);
+    if (res) {
+      toast("Submitted successfully");
+    } else {
+      ("Error Occurred");
+    }
   };
+
+  // const getData = () => {
+  //   toast(formData ? "Submitted successfully" : "enter your info");
+  // };
   return (
     <Fragment>
       <div className="container w-[100%] h-40 pt-14 flex justify-between">
@@ -71,7 +118,7 @@ const BookNow = () => {
       </div>
       <ToastContainer />
 
-      <form onSubmit={handleSubmit}>
+      <form method="POST" onSubmit={handleSubmit}>
         <div className="flex flex-col items-center gap-5">
           <h1 className=" text-2xl font-semibold">REQUEST OF RESERVATION</h1>
 
@@ -254,7 +301,7 @@ const BookNow = () => {
           </div>
           <button
             type="submit"
-            onClick={notify}
+            onClick={handleSubmit}
             className="border rounded w-[100px] h-[40px] bg-[#FF4500] text-white font-semibold cursor-pointer mr-[65%]"
           >
             Book Now
