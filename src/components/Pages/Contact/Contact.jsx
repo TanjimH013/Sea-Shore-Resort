@@ -4,7 +4,7 @@ import Logo from "../Logo/Logo";
 const Contact = () => {
   return (
     <div>
-      <div className="container flex justify-between">
+      <div className="container w-[100%] h-[175px] pr-7 flex justify-between border-b border-[#bbc7]">
         <NavLink to="/">
           <Logo />
         </NavLink>

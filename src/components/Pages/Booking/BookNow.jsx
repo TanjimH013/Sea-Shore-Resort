@@ -82,7 +82,7 @@ const BookNow = () => {
   // };
   return (
     <Fragment>
-      <div className="container w-[100%] h-40 pt-14 flex justify-between">
+      <div className="container gap-72 w-[100%] h-[175px] pr-7 flex justify-between border-b border-[#bbc7]">
         <NavLink to="/">
           <Logo />
         </NavLink>
@@ -131,6 +131,7 @@ const BookNow = () => {
                 className="border px-4 w-[550px] h-11 outline-none"
                 onChange={handleChange}
                 value={formData.dateArrival}
+                required
               />
             </div>
             <div className="flex flex-col">
@@ -141,6 +142,7 @@ const BookNow = () => {
                 className="border px-4 w-[550px] h-11 outline-none"
                 onChange={handleChange}
                 value={formData.dateDeparture}
+                required
               />
             </div>
           </div>
@@ -153,6 +155,7 @@ const BookNow = () => {
                 className="border px-4 w-[357px] h-11 outline-none"
                 onChange={handleChange}
                 value={formData.adult}
+                required
               >
                 <option>select</option>
                 <option value="1">1</option>
@@ -166,12 +169,13 @@ const BookNow = () => {
               className="flex
             flex-col"
             >
-              <label>Number of Children</label>
+              <label className=" mb-1">Number of Children</label>
               <select
                 name="children"
                 className="border px-4 w-[357px] h-11 outline-none"
                 onChange={handleChange}
                 value={formData.children}
+                required
               >
                 <option>select</option>
                 <option value="0">0</option>
@@ -192,6 +196,7 @@ const BookNow = () => {
                 className="border px-4 w-[357px] h-11 outline-none"
                 onChange={handleChange}
                 value={formData.room}
+                required
               >
                 <option>select</option>
                 <option value="1">1</option>
@@ -212,6 +217,7 @@ const BookNow = () => {
                 className="border px-4 w-[550px] h-11 outline-none"
                 onChange={handleChange}
                 value={formData.firstName}
+                required
               />
             </div>
             <div className="flex flex-col">
@@ -223,6 +229,7 @@ const BookNow = () => {
                 className="border px-4 w-[550px] h-11 outline-none"
                 onChange={handleChange}
                 value={formData.lastName}
+                required
               />
             </div>
           </div>
@@ -237,6 +244,7 @@ const BookNow = () => {
                 className="border px-4 w-[550px] h-11 outline-none"
                 onChange={handleChange}
                 value={formData.email}
+                required
               />
             </div>
             <div className="flex flex-col">
@@ -248,6 +256,7 @@ const BookNow = () => {
                 className="border px-4 w-[550px] h-11 outline-none"
                 onChange={handleChange}
                 value={formData.phoneNum}
+                required
               />
             </div>
           </div>
@@ -274,6 +283,7 @@ const BookNow = () => {
                 className="border px-4 w-[357px] h-11 outline-none"
                 onChange={handleChange}
                 value={formData.city}
+                required
               />
             </div>
             <div className="flex flex-col">
@@ -296,13 +306,14 @@ const BookNow = () => {
                 className="border px-4 w-[357px] h-11 outline-none"
                 onChange={handleChange}
                 value={formData.country}
+                required
               />
             </div>
           </div>
           <button
             type="submit"
             onClick={handleSubmit}
-            className="border rounded w-[100px] h-[40px] bg-[#FF4500] text-white font-semibold cursor-pointer mr-[65%]"
+            className="border rounded w-[100px] h-[40px] bg-[#FF4500] text-white font-semibold cursor-pointer mt-16 mr-[85%]"
           >
             Book Now
           </button>

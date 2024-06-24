@@ -7,7 +7,7 @@ import { assets } from "../../assets/assets";
 const Navbar = () => {
   return (
     <Fragment>
-      <div className="container flex justify-between">
+      <div className="container w-[100%] h-[175px] pr-7 flex justify-between border-b border-[#bbc7]">
         <NavLink to="/">
           <Logo />
         </NavLink>
@@ -33,9 +33,13 @@ const Navbar = () => {
       </div>
 
       <div className="mainImg-container">
-        <img src={assets.mainImg} alt="" className="mainImg opacity-65" />
+        <img
+          src={assets.mainImg}
+          alt=""
+          className="mainImg opacity-65 w-[100%]"
+        />
 
-        <div className="Img-card mt-5">
+        <div className="Img-card  mt-5">
           <h1 className=" text-3xl font-extrabold text-black mb-3">
             Welcome to Sea Shore Resort
           </h1>

@@ -2,10 +2,12 @@ import { NavLink, Link } from "react-router-dom";
 import "./our-services.css";
 import Logo from "../Logo/Logo";
 
+import { Fragment } from "react";
+
 const OurServices = () => {
   return (
-    <div>
-      <div className="container flex justify-between">
+    <Fragment>
+      <div className="container w-[100%] h-[175px] pr-7 flex justify-between border-b border-[#bbc7]">
         <NavLink to="/">
           <Logo />
         </NavLink>
@@ -39,8 +41,9 @@ const OurServices = () => {
           </ul>
         </div>
       </div>
-      <h1 className="our-services text-3xl">Our Services page</h1>
-    </div>
+
+      <div className="main-container w-[100%]"></div>
+    </Fragment>
   );
 };
 

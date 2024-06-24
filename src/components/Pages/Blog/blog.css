@@ -1,15 +1,22 @@
-.container {
-  margin-bottom: 100px;
+.clip-hidden {
+  clip-path: ellipse(0 0 at 0% 0%);
 }
 
-.blog-card h1 {
-  font-family: "Poppins";
-  font-size: 20px;
-  font-weight: bold;
-  margin-top: 35px;
-  margin-bottom: 15px;
+.clip-visible {
+  clip-path: ellipse(1450px 1450px at 0% 0%);
 }
 
-.blog-card p {
-  margin-bottom: 35px;
+#back,
+#forward {
+  @apply absolute z-[5] -translate-y-2/4 text-gray-100 hover:scale-125 cursor-pointer duration-[0.4s] ease-out px-0 py-2.5 border-0 top-2/4;
+}
+
+.content {
+  @apply text-[aliceblue] absolute w-full z-[5] text-center backdrop-blur-[2px] duration-[1s] px-0 py-[15px] left-0 bottom-0;
+  background: #ffffff22;
+}
+
+body {
+  display: flex;
+  justify-content: center;
 }
