@@ -21,10 +21,10 @@ const BookNow = () => {
     country: "",
   };
   const [formData, setFormData] = useState(initialValues);
+  const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
     setFormData(() => ({ ...formData, [e.target.name]: e.target.value }));
-    console.log(formData);
   };
 
   const handleSubmit = async (e) => {
@@ -65,13 +65,20 @@ const BookNow = () => {
         country,
       }),
     };
+    const validationErrors = {};
+    if (!formData.dateArrival) {
+      validationErrors.dateArrival = "Please select Arrival Date";
+    }
+
+    setErrors(validationErrors);
+
     const res = await fetch(
       "https://sea-shore-resort-website-default-rtdb.asia-southeast1.firebasedatabase.app/UserData.json",
       options
     );
     console.log(res);
     if (res) {
-      toast("Submitted successfully");
+      toast("Submitted successfully", formData);
     } else {
       ("Error Occurred");
     }
@@ -133,6 +140,7 @@ const BookNow = () => {
                 value={formData.dateArrival}
                 required
               />
+              {errors.dateArrival && <h2>{errors.dateArrival}</h2>}
             </div>
             <div className="flex flex-col">
               <label className=" mb-1">Departure Date *</label>

@@ -84,7 +84,7 @@ export const blogDATA_9 = [
   },
 ];
 
-export const blogDATA_10 = [
+export const blogDATA_Footer = [
   {
     heading: "Plan Your Stay:",
     description:

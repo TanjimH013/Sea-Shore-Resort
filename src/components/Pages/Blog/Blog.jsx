@@ -1,6 +1,6 @@
 import { NavLink, Link } from "react-router-dom";
 import Logo from "../Logo/Logo";
-import { blogDATA } from "../../../Data/blogDATA";
+import { blogDATA, blogDATA_Footer } from "../../../Data/blogDATA";
 import "./blog.css";
 import { useEffect, useRef, useState } from "react";
 
@@ -82,8 +82,8 @@ const Blog = () => {
         </div>
       </div>
 
-      <div className="container-blog font-[Poppins] mt-24 rounded-xl relative shadow-lg overflow-hidden">
-        <div className="relative w-[100%] h-[600px]">
+      <div className="container-blog font-[Poppins] mt-24 flex justify-center">
+        <div className="relative w-[70%] h-[600px] rounded-xl shadow-lg overflow-hidden">
           {blogDATA.map((item, i) => {
             return (
               <img
@@ -96,29 +96,41 @@ const Blog = () => {
               />
             );
           })}
-        </div>
-        <div>
-          <button ref={prevRef} id="back" onClick={() => Slide("prev")}>
-            <ion-icon name="chevron-back-outline" size="large"></ion-icon>
-          </button>
-          <button
-            ref={nextRef}
-            id="forward"
-            className="right-0"
-            onClick={() => Slide("next")}
-          >
-            <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
-          </button>
-        </div>
-        <div ref={contentRef} className="content">
-          <h1 ref={headingRef} className="text-3xl font-bold text-[#ffff]">
-            {blogDATA[0].heading}
-          </h1>
-          <p ref={describeRef} className=" mt-1.5 text-sm p-3 text-[#ffff]">
-            {blogDATA[0].description}
-          </p>
+
+          <div>
+            <button ref={prevRef} id="back" onClick={() => Slide("prev")}>
+              <ion-icon name="chevron-back-outline" size="large"></ion-icon>
+            </button>
+            <button
+              ref={nextRef}
+              id="forward"
+              className="right-0"
+              onClick={() => Slide("next")}
+            >
+              <ion-icon name="chevron-forward-outline" size="large"></ion-icon>
+            </button>
+          </div>
+          <div ref={contentRef} className="content">
+            <h1 ref={headingRef} className="text-3xl font-bold text-[#ffff]">
+              {blogDATA[0].heading}
+            </h1>
+            <p ref={describeRef} className=" mt-1.5 text-sm p-3 text-[#ffff]">
+              {blogDATA[0].description}
+            </p>
+          </div>
         </div>
       </div>
+
+      <footer className="w-[100%] h-52">
+        {blogDATA_Footer.map((item, i) => {
+          return (
+            <div className=" mt-44" key={i}>
+              <h1 className="text-xl mb-8">{item.heading}</h1>
+              <p className="text-sm">{item.description}</p>
+            </div>
+          );
+        })}
+      </footer>
     </div>
   );
 };
