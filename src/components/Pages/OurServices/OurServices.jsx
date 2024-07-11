@@ -7,7 +7,7 @@ import { Fragment } from "react";
 const OurServices = () => {
   return (
     <Fragment>
-      <div className="container w-[100%] h-[175px] pr-7 flex justify-between border-b border-[#bbc7]">
+      <div className="container gap-72 w-[100%] h-[175px] pr-7 flex justify-between border-b border-[#bbc7]">
         <NavLink to="/">
           <Logo />
         </NavLink>
