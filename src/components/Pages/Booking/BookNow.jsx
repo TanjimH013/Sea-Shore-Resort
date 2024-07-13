@@ -127,7 +127,9 @@ const BookNow = () => {
 
       <form method="POST" onSubmit={handleSubmit}>
         <div className="flex flex-col items-center gap-5">
-          <h1 className=" text-2xl font-semibold">REQUEST OF RESERVATION</h1>
+          <h1 className=" text-2xl mt-5 font-semibold">
+            REQUEST OF RESERVATION
+          </h1>
 
           <div className="date-card flex gap-8">
             <div className="flex flex-col">
@@ -321,7 +323,7 @@ const BookNow = () => {
           <button
             type="submit"
             onClick={handleSubmit}
-            className="border rounded w-[100px] h-[40px] bg-[#FF4500] text-white font-semibold cursor-pointer mt-16 mr-[85%]"
+            className="border rounded w-[100px] h-[40px] bg-[#312e2d] text-yellow-400 font-semibold cursor-pointer mt-16 mb-10 mr-[85%]"
           >
             Book Now
           </button>
