@@ -1,7 +1,9 @@
+import Navbar from "./components/Navbar.jsx";
+
 const App = () => {
   return (
     <>
-      <h1>Sea Shore Resort </h1>
+      <Navbar />
     </>
   );
 };
