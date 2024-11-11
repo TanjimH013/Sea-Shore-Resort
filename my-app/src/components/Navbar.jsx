@@ -1,6 +1,7 @@
 import "./NavbarStyle.css";
 import { MenuItems } from "./MenuItems";
-import React, { useState } from "react";
+import { React, useState } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
   // Use useState to handle the clicked state
@@ -12,27 +13,29 @@ function Navbar() {
   };
 
   return (
-    <nav className="NavbarItems">
-      <h1 className="NavbarLogo">Sea Shore Resort</h1>
+    <>
+      <nav className="NavbarItems">
+        <h1 className="NavbarLogo">Sea Shore Resort</h1>
 
-      <div className="MenuIcon" onClick={handleClick}>
-        <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
-      </div>
+        <div className="MenuIcon" onClick={handleClick}>
+          <i className={clicked ? "fas fa-times" : "fas fa-bars"}></i>
+        </div>
 
-      <ul className={clicked ? "NavMenu Active" : "NavMenu"}>
-        {MenuItems.map((item, index) => {
-          return (
-            <li key={index}>
-              <a className={item.cName} href="/">
-                <i className={item.icon}></i>
-                {item.title}
-              </a>
-            </li>
-          );
-        })}
-        <button>Sign Up</button>
-      </ul>
-    </nav>
+        <ul className={clicked ? "NavMenu Active" : "NavMenu"}>
+          {MenuItems.map((item, index) => {
+            return (
+              <li key={index}>
+                <Link className={item.cName} to={item.url}>
+                  <i className={item.icon}></i>
+                  {item.title}
+                </Link>
+              </li>
+            );
+          })}
+          <button>Sign Up</button>
+        </ul>
+      </nav>
+    </>
   );
 }
 
