@@ -26,8 +26,15 @@ export const MenuItems = [
     icon: "fa-solid fa-phone",
   },
   {
-    title: "Sign Up",
-    url: "/signUp",
-    cName: "nav-links-signup",
+    title: "Blog",
+    url: "/blog",
+    cName: "nav-links",
+    icon: "fa-solid fa-blog",
   },
+
+  // {
+  //   title: "Sign Up",
+  //   url: "/signUp",
+  //   cName: "nav-links-signup",
+  // },
 ];

@@ -1,4 +1,4 @@
-import "./NavbarStyle.css";
+import "./NavbarStyles.css";
 import { MenuItems } from "./MenuItems";
 import { React, useState } from "react";
 import { Link } from "react-router-dom";
@@ -32,7 +32,6 @@ function Navbar() {
               </li>
             );
           })}
-          <button>Sign Up</button>
         </ul>
       </nav>
     </>
