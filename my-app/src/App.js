@@ -1,4 +1,3 @@
-import Navbar from "./components/Navbar.jsx";
 import { Route, Routes } from "react-router-dom";
 import Home from "./routes/Home.jsx";
 import About from "./routes/About.jsx";
@@ -20,7 +19,6 @@ const App = () => {
           <Route path="/blog" element={<Blog />} />
         </Routes>
       </div>
-      <Navbar />
     </>
   );
 };
