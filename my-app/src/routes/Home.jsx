@@ -1,6 +1,6 @@
 import Navbar from "../components/Navbar";
 import Hero from "../components/Hero";
-import HeroHomeimg from "../assets/1.HeroHome.png";
+import HeroHomeimg from "../assets/2.HeroHome.png";
 
 const Home = () => {
   return (
