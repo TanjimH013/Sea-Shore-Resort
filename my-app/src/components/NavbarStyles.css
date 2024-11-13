@@ -132,7 +132,75 @@ position: fixed;
   }
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
+  .NavbarItems {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    box-shadow: 0 5px 15px 0 rgba(0, 0, 0, 0.25);
+    width: 95%;
+    height: 80px;
+    border-radius: 13px;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999;
+  }
+
+  /** formula for floating Navbar
+  position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 9999; [z-index higher values makes Navbar always on the top]
+  */
+
+  .NavbarLogo {
+    color: #222;
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+
+  .NavMenu {
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    grid-gap: 7px;
+    list-style: none;
+    align-items: center;
+  }
+
+  .nav-links {
+    text-decoration: none;
+    color: #222;
+    font-size: 0.9rem;
+    font-weight: 600;
+    padding: 0.7rem 0.8rem;
+    white-space: nowrap;
+  }
+
+  .nav-links i {
+    padding-right: 10px;
+  }
+
+  .nav-links:hover {
+    background-color: #01959a;
+    color: #fff;
+    border-radius: 4px;
+    transition: all 0.2s ease-in-out;
+  }
+  .nav-links-bookNow {
+    display: none;
+  }
+
+  .MenuIcon {
+    display: none; /**hid from large screen*/
+  }
+}
+
+@media screen and (max-width: 480px) {
   .NavbarItems {
     z-index: 99;
   }

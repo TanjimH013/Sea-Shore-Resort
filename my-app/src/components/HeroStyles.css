@@ -44,19 +44,28 @@ img {
   color: #222;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 768px) {
   .hero-text h1 {
-    font-size: 2rem;
+    font-size: 1.5rem;
     padding: 10x 20px;
+    margin-bottom: 0.5rem;
   }
 
   .hero-text p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 0 0 1rem 0;
+    margin-bottom: 0.5rem;
   }
 
   .hero-text .show {
-    display: none;
+    text-decoration: none;
+    background: #fff;
+    padding: 0.6rem 1rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    color: #222;
   }
 }
 
