@@ -4,6 +4,7 @@ import About from "./routes/About.jsx";
 import Service from "./routes/Service.jsx";
 import Contact from "./routes/Contact.jsx";
 import Blog from "./routes/Blog.jsx";
+import Booking from "./routes/Booking.jsx";
 
 import "./style.css";
 
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/service" element={<Service />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/bookNow" element={<Booking />} />
         </Routes>
       </div>
     </>

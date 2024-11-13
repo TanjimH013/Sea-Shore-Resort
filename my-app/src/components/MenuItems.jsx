@@ -31,10 +31,9 @@ export const MenuItems = [
     cName: "nav-links",
     icon: "fa-solid fa-blog",
   },
-
-  // {
-  //   title: "Sign Up",
-  //   url: "/signUp",
-  //   cName: "nav-links-signup",
-  // },
+  {
+    title: "Book Now",
+    url: "/bookNow",
+    cName: "nav-links-bookNow",
+  },
 ];
