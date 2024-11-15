@@ -1,7 +1,13 @@
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
+import ContactImg from "../assets/6.ContactImg.png";
+import "./contactStyles.css";
+
 const Contact = () => {
   return (
     <>
-      <h1>This is Contact</h1>
+      <Navbar />
+      <Hero cName="hero-contact" heroImg={ContactImg} title="Contact" />
     </>
   );
 };
