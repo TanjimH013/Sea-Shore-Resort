@@ -1,7 +1,13 @@
+import Navbar from "../components/Navbar";
+import Hero from "../components/Hero";
+import "./aboutStyles.css";
+import AboutImg from "../assets/3.AbutImg.png";
+
 const About = () => {
   return (
     <>
-      <h1>This is About page</h1>
+      <Navbar />
+      <Hero cName="hero-about" heroImg={AboutImg} title="About" />
     </>
   );
 };
