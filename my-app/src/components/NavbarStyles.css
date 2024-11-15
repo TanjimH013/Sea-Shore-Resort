@@ -267,3 +267,71 @@ position: fixed;
     color: #222;
   }
 }
+
+@media screen and (max-width: 360px) {
+  .NavbarItems {
+    z-index: 99;
+  }
+
+  .NavMenu {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    background-color: #fff;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    align-items: stretch;
+    padding: 80px 0 30px 0;
+    margin: 0;
+    transition: 0.3s ease-in-out;
+    border-radius: 13px;
+  }
+
+  .NavMenu.Active {
+    left: 0;
+    opacity: 1;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+  }
+
+  .nav-links {
+    display: block;
+    width: 100%;
+    font-size: 1.2rem;
+    padding: 2rem 0;
+  }
+
+  .nav-links:hover {
+    background-color: #01959a;
+    transition: none;
+  }
+
+  .nav-links-bookNow {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 4px;
+    background-color: #01959a;
+    color: #fff;
+    width: 80%;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  .MenuIcon {
+    display: block;
+    cursor: pointer;
+  }
+
+  .MenuIcon i {
+    font-size: 1.2rem;
+    color: #222;
+  }
+}
