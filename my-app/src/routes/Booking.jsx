@@ -1,7 +1,14 @@
+import Hero from "../components/Hero";
+import Navbar from "../components/Navbar";
+import BookingImg from "../assets/1.HeroHome.png";
+
+import "./bookingStyles.css";
+
 const Booking = () => {
   return (
     <>
-      <h1> I'am booking</h1>
+      <Navbar />
+      <Hero cName="hero-booking" heroImg={BookingImg} title="Book Now" />
     </>
   );
 };

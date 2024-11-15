@@ -1,0 +1,61 @@
+/**import from Home.jsx*/
+
+.hero-booking {
+  width: 100%;
+  height: 70vh;
+  position: relative;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/**import from Hero.jsx*/
+.hero-booking h1 {
+  margin-top: 3rem;
+  font-size: 3.2rem;
+  font-weight: 700;
+  color: #fff;
+}
+
+@media screen and (max-width: 1024px) {
+  /**import from Home.jsx*/
+
+  .hero-booking {
+    width: 100%;
+    height: 60vh;
+    position: relative;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /**import from Hero.jsx*/
+
+  .hero-booking h1 {
+    margin-top: 5rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #fff;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .hero-booking h1 {
+    font-size: 2.5rem;
+    padding: 10x 20px;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-booking h1 {
+    font-size: 2rem;
+    padding: 10x 20px;
+  }
+}
