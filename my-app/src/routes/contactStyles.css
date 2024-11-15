@@ -52,10 +52,3 @@ img {
     margin-bottom: 0.5rem;
   }
 }
-
-@media screen and (max-width: 480px) {
-  .hero-contact h1 {
-    font-size: 2rem;
-    padding: 10x 20px;
-  }
-}
